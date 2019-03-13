@@ -27,7 +27,7 @@ require("./config/passport")(passport);
 app.get("/", (req, res) => res.send("Hello World"));
 
 app.use("/api/users", users);
-app.use("/api/profie", profile);
+app.use("/api/profile", profile);
 app.use("/api/posts", posts);
 
 const port = process.env.PORT || 5000;
